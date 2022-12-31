@@ -54,6 +54,7 @@ function listPlayer(player) {
         }
         else{
              alert('You can not select more than five ');
+             return disableButton()=false;
         }
     }
 
