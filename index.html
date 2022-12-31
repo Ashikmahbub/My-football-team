@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+            fontFamily: {
+				sans: ['"DM Sans"', ...defaultTheme.fontFamily.sans],
+				cursive: ['cursive']
+          }
+        }
+      }
+    }
+  </script> -->
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+  
+</head>
+
+<body class="bg-black">
+    <header class="mb-10">
+        <!-- Navbar -->
+       
+        <!-- Background image -->
+        <div class="relative overflow-hidden bg-no-repeat bg-cover" style="
+          background-position: 50%;
+          background-image: url('images/6572025.jpg');
+          height: 450px;
+        ">
+          <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+            style="background-color: rgba(0, 0, 0, 0.75)">
+            <div class="flex justify-center items-center h-full">
+              <div class="text-center text-yellow-400 px-6 md:px-12">
+                <h1 class="text-5xl font-bold mt-0 mb-6 italic">Select Your Best Five</h1>
+                <p class="text-2xl font-bold italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, architecto? Officiis, <br> quasi modi! Ducimus recusandae <br> consectetur consequatur quo vitae nesciunt quidem quibusdam repudiandae! <br> Ea molestiae corporis deserunt nobis maiores nesciunt.</p>
+              
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Background image -->
+    </header>
+       
+    
+    <main>
+        
+        <!-- player card  -->
+        <div class="grid grid-cols-4 gap-4 ">
+            <div class="grid grid-cols-3 col-span-3 player-card">
+                <div class="flex justify-center">
+                    <div class="rounded-lg shadow-lg bg-black max-w-sm">
+                        <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                            <img class="rounded-t-lg relative h-48 w-58" src="images/liomessi.jpg" alt=""/>
+                        </a>
+                        <div class="p-6 bg-black flex justify-center flex-col">
+                            <h5 class="text-white text-xl font-medium mb-2">Lionel Messi</h5>
+                            <p class="text-white text-base mb-4">
+                                Right Winger
+                            </p>
+                            <button type="button" id="player-1" class=" w-75 inline-block px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:border-l-amber-400 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"  >SELECT</button>
+                       </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="rounded-lg shadow-lg bg-black max-w-sm">
+                        <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                            <img class="rounded-t-lg relative h-48 w-58" src="images/5459745.jpg" alt=""/>
+                        </a>
+                        <div class="p-6 bg-black flex justify-center flex-col">
+                            <h5 class="text-white text-xl font-medium mb-2">Cristiano Ronaldo</h5>
+                            <p class="text-white text-base mb-4">
+                                Central Forward
+                            </p>
+                            <button  id="player-2" type="button" class=" w-75 inline-block px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:border-l-amber-400 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">SELECT</button>
+                       </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="rounded-lg shadow-lg bg-black max-w-sm">
+                        <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                            <img class="rounded-t-lg relative h-48 w-58"  src="images/Bell.jpg" alt=""/>
+                        </a>
+                        <div class="p-6 bg-black flex justify-center flex-col align-baseline">
+                            <h5 class="text-white text-xl font-medium mb-2">Gareth Bell</h5>
+                            <p class="text-white text-base mb-4">
+                                Right Winger
+                            </p>
+                            <button type="button"  id="player-3" class=" w-75 inline-block px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:border-l-amber-400 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"> SELECT</button>
+                       </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="rounded-lg shadow-lg bg-black max-w-sm ">
+                        <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                            <img class="rounded-t-lg relative h-48 w-58"  src="images/paulo_dybala.webp" alt=""/>
+                        </a>
+                        <div class="p-6 bg-black flex justify-center flex-col align-baseline">
+                            <h5 class="text-white text-xl font-medium mb-2">Paulo Dybala</h5>
+                            <p class="text-white text-base mb-4">
+                                Attacking MidFielder
+                            </p>
+                            <button type="button"  id="player-4" class=" w-75 inline-block px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:border-l-amber-400 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"> SELECT</button>
+                       </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="rounded-lg shadow-lg bg-black max-w-sm ">
+                        <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                            <img class="rounded-t-lg relative h-48 w-58"  src="images/Torres.jpg" alt=""/>
+                        </a>
+                        <div class="p-6 bg-black flex justify-center flex-col align-baseline">
+                            <h5 class="text-white text-xl font-medium mb-2">Fernando Torres </h5>
+                            <p class="text-white text-base mb-4">
+                                Striker
+                            </p>
+                            <button type="button"  id="player-5" class=" w-75 inline-block px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:border-l-amber-400 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"> SELECT</button>
+                       </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="rounded-lg shadow-lg bg-black max-w-sm ">
+                        <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                            <img class="rounded-t-lg relative h-48 w-58"  src="images/Neymar.jpg" alt=""/>
+                        </a>
+                        <div class="p-6 bg-black flex justify-center flex-col align-baseline">
+                            <h5 class="text-white text-xl font-medium mb-2">Neymar Junior</h5>
+                            <p class="text-white text-base mb-4">
+                                Attacking MidFielder
+                            </p>
+                            <button type="button"  id="player-6" class=" w-75 inline-block px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:border-l-amber-400 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"> SELECT</button>
+                       </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            
+            <!-- player card layout  -->
+            
+            
+            
+                 
+
+    <!-- player list start --> 
+            <div class="flex-col gap-x-10">
+                
+                <div class="card list">
+                    <div class="flex flex-col">
+                        <h1 class="text-3xl font-bold text-yellow-500 ">Selected Top -V</h1>
+                        <ul id="make-list" class="text-2xl font-bold text-white mt-5 my-list">
+    
+                        </ul>
+                   
+                    </div>
+                     
+                </div>
+                
+                 
+               
+                <div class="flex flex-col p-2 mt-10">
+                    <div class="flex flex-col">
+                        <h1 class="text-3xl font-bold text-yellow-500 ">Budget Per Player</h1>
+                        <input id="per-player-cost" type="text" class="mt-3 bg-amber-200 rounded p-2 w-40">
+                        <button id="player-cost-btn" class="bg-lime-300  mt-2 w-40 p-2 rounded font-bold">Calculate</button>
+                        <p class="text-2xl text-yellow-300 font-bold mt-2">$ <span id="player-expense"></span></p>
+                    </div>
+                    
+                    <div>
+                        <div>
+                            <h1 class="text-3xl font-bold text-yellow-500 ">Manager Expenses</h1>
+                            <input type="text" class="mt-3 bg-amber-200 rounded p-2 w-40  " id="manager-cost">
+
+                        </div>
+                        <div>
+                            <h1 class="text-3xl font-bold text-yellow-500 ">Coach Expenses</h1>
+                            <input type="text" class="mt-3 bg-amber-200 rounded p-2 w-40" id="coach-cost">
+
+                        </div>
+                        <div>
+                            <button class="bg-lime-300  mt-2 w-40 p-2 rounded font-bold" id="btn-total">Calculate Total</button>
+                            <p class="text-2xl text-yellow-300 font-bold mt-2">$ <span id="total-cost"></span></p>
+
+                        </div>
+
+                    </div>
+
+
+                     
+                </div>
+
+            </div>
+
+
+               
+        <!-- player list end  -->
+             
+          <!-- calculation star        -->
+               
+        <!-- calculation end  -->
+
+
+
+
+       
+    
+            </div>
+           
+           
+            <!-- calculation section  -->
+             
+
+            
+             
+      
+      
+    
+        </div>
+
+
+    </main>
+
+    <script src="index.js"></script>
+    <script src="function.js"></script>
+  
+
+</body>
+</html>
